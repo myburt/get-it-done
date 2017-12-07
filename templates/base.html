@@ -2,8 +2,20 @@
 <html>
     <head>
         <title>{{title}}</title>
+        <style>
+            .top-link
+            {
+                position: relative;
+                left:95%;
+                top:0em;
+                padding-right: 1em;
+            }
+        </style>
     </head>
     <body>
+        <div style="width:100%; position:static">
+            <div style="display:inline-block" class="top-link"><a href="/logout">Logout</a></div>
+        </div>
 
         {% block content %}
         {% endblock %}
